@@ -3,6 +3,10 @@ on:
   push:
     branches: [main, master]
   pull_request:
+permissions:
+  contents: read
+  security-events: write
+  actions: read
 jobs:
   semgrep:
     runs-on: ubuntu-latest
